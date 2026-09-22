@@ -1,0 +1,188 @@
+================================================================================
+       Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics - Complete Work Report
+================================================================================
+
+Project: Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics (Milestones 1 & 2)
+Team: Data Visualization Frontend Team A
+Workspace: c:\Data_Visulization_Frontend_Team-a
+Last Updated: 2026-08-21 at 18:48:48+05:30 (Local Time)
+
+This document contains the detailed specifications, deliverables, and progress
+chronologies for both Milestone 1 and Milestone 2 frontend developments.
+
+================================================================================
+                   MILESTONE 1: CORE MONITORING DASHBOARD
+================================================================================
+Project Kickoff Date: Wednesday, 22 July 2026
+Milestone 1 End Date: Thursday, 6 August 2026
+
+--------------------------------------------------------------------------------
+Frontend Task 1: Login Portal [Date: Wednesday, 22 July 2026]
+--------------------------------------------------------------------------------
+- Created the SOC Analyst Login view (LoginPage.jsx).
+- Integrated admin credentials checks (admin / admin123) and session storage.
+- Designed form inputs validation and alert banners.
+
+--------------------------------------------------------------------------------
+Frontend Task 2: Dashboard Sidebar Navigation [Date: Friday, 24 July 2026]
+--------------------------------------------------------------------------------
+- Built the main dashboard container shell (DashboardPage.jsx).
+- Structured the fixed left sidebar layout with tab items:
+  * Overview
+  * Security Events
+  * Threat Intelligence
+  * Vulnerabilities
+  * Analytics
+- Set up state-driven navigation panels in React.
+
+--------------------------------------------------------------------------------
+Frontend Task 3: KPI Overview Cards [Date: Monday, 27 July 2026]
+--------------------------------------------------------------------------------
+- Designed the upper KPI grid showcasing overall network health metrics:
+  * Total Events (stats.totalEvents)
+  * Critical Threats (stats.criticalThreats)
+  * High Severity Alerts (stats.highSeverityAlerts)
+  * Vulnerabilities (stats.vulnerabilities)
+  * Active Incidents (stats.activeIncidents)
+
+--------------------------------------------------------------------------------
+Frontend Task 4: Custom Event Log Table [Date: Wednesday, 29 July 2026]
+--------------------------------------------------------------------------------
+- Built the chronological events table inside the Overview panel.
+- Included columns: Time, Event Type, Severity, Source IP, and Status.
+- Styled log severity priority badges (Critical, High, Medium, Low) and action items.
+
+--------------------------------------------------------------------------------
+Frontend Task 5: Threat Severity Distribution [Date: Friday, 31 July 2026]
+--------------------------------------------------------------------------------
+- Integrated Chart.js doughnut chart in DashboardCharts.jsx.
+- Mapped threat severity categories: Critical (Red), High (Amber), Medium (Blue), Low (Green).
+- Coded custom center-text plugin to draw totals dynamically on mouse hovers.
+
+--------------------------------------------------------------------------------
+Frontend Task 6: Event Trend Graph [Date: Monday, 3 August 2026]
+--------------------------------------------------------------------------------
+- Coded the Line Chart representing events volume distribution over time.
+- Integrated linear gradient fills and curve smoothings (tension: 0.4).
+
+--------------------------------------------------------------------------------
+Frontend Task 7: Top Attack Types [Date: Tuesday, 4 August 2026]
+--------------------------------------------------------------------------------
+- Programmed the Bar Chart comparison grid for threat classifications.
+- Structured counts for: Brute Force, Malware, Phishing, and Reconnaissance.
+
+--------------------------------------------------------------------------------
+Frontend Task 8: Filters & Add-On Utilities [Date: Thursday, 6 August 2026]
+--------------------------------------------------------------------------------
+- Added interactive filter controls: Severity quick buttons, Event Type dropdowns,
+  and Source IP Address filters.
+- [ADD-ON] Export CSV: Compiled active logs and downloaded a local Excel-ready .csv file.
+- [ADD-ON] Search Bar: Coded full-text queries matching against IDs and IPs.
+- [ADD-ON] Threat Timeline: Built interactive chronological node lists under "Security Events".
+- [ADD-ON] Heatmap of Attacks: Projected curved bezier attack lines on a world map.
+- [ADD-ON] Auto-Refresh Simulator: Setup attack generator loops feeding logs into terminals.
+- [ADD-ON] Top Targeted Assets: Displayed the 5 most targeted hosts in horizontal gauges.
+- [ADD-ON] Dark/Light Mode: Created custom CSS overrides toggle inside the header.
+
+
+
+================================================================================
+       MILESTONE 2: THREAT DETECTION & RISK MITIGATION DASHBOARD
+================================================================================
+Focus: Machine learning outputs visualization, Explainable AI (XAI) triage pages,
+and Axios API client integration.
+
+--------------------------------------------------------------------------------
+Day 1: Understand New ML Outputs & Datasets [Date: Friday, 7 August 2026]
+--------------------------------------------------------------------------------
+- Analyzed the structure of the CSV dataset (final_security_dataset.csv).
+- Mapped raw fields (risk_score, threat_match, is_high_risk) to prediction categories.
+- Defined AI-assisted properties (Normal, Suspicious, Critical) and mock confidence mapping.
+- Completed initial review of the Express backend proxy routing.
+
+--------------------------------------------------------------------------------
+Day 2: Design Detection UI & Theme Architecture [Date: Monday, 10 August 2026]
+--------------------------------------------------------------------------------
+- Designed the modular layout for the new prediction dashboard.
+- Inspected the existing theme overrides (light-theme) in DashboardPage.css.
+- Setup visual rules to use CSS custom variables (var(--bg-surface), var(--border-color), etc.)
+  to ensure all new panels dynamically adapt to Light Mode and Dark Mode.
+
+--------------------------------------------------------------------------------
+Day 3: Threat Table Implementation [Date: Tuesday, 11 August 2026]
+--------------------------------------------------------------------------------
+- Refactored the Overview logs table in DashboardPage.jsx.
+- Changed table columns to match Milestone 2 AI deliverables: Event ID, Event Type, 
+  AI Prediction, Confidence, Severity, and Timestamp.
+- Configured prediction badges (Critical = red/badge-critical, Suspicious = yellow/badge-warning,
+  Normal = green/badge-low).
+- Preserved original CSS hover styles, search filter inputs, and export capabilities.
+
+--------------------------------------------------------------------------------
+Day 4: Anomaly Charts Integration [Date: Wednesday, 12 August 2026]
+--------------------------------------------------------------------------------
+- Refactored DashboardCharts.jsx to represent AI anomaly metrics.
+- Updated the Threat Distribution Donut Chart to show Normal vs Suspicious vs Critical.
+- Updated the Trend Line Chart to plot hourly timestamps vs detected anomalies.
+- Preserved linear gradients, center-text count plugins, and the targeted assets horizontal progress bar.
+
+--------------------------------------------------------------------------------
+Day 5: Event Details Investigation [Date: Thursday, 13 August 2026]
+--------------------------------------------------------------------------------
+- Created EventDetails.jsx to act as the SOC analyst triage workspace.
+- Structured properties display grids for Source IP, Destination IP, User, Asset, Timestamp,
+  Severity, and CVSS scores.
+- Connected Event ID numbers inside the threat log table as triggers to swap layout panel
+  displays to this triage view.
+
+--------------------------------------------------------------------------------
+Day 6: AI Analysis & Explainable AI (XAI) Section [Date: Friday, 14 August 2026]
+--------------------------------------------------------------------------------
+- Implemented ConfidenceCard.jsx, rendering an animated circular gauge displaying
+  the AI classification's percentage likelihood.
+- Built the XAI checkmarks attribution checklist (checking off flags like "failed login
+  attempts > threshold" and "unusual hours" based on active CSV values).
+- Unified CSS variable themes inside ConfidenceCard and EventDetails to support light/dark modes.
+
+--------------------------------------------------------------------------------
+Day 7: API Integration & Axios Mock Wrapper [Date: Monday, 17 August 2026]
+--------------------------------------------------------------------------------
+- Rewrote the data client layer in api.js.
+- Implemented a custom fetch-based Axios client mock interface (const axios = { get: ... })
+  to prevent missing dependency errors in local sandboxes without breaking compilation.
+- Removed external 'axios' package from package.json to secure compile builds.
+- Coded robust fallback rules to parse the dataset CSV and calculate ML properties
+  on the fly when the FastAPI backend is offline.
+
+--------------------------------------------------------------------------------
+Day 8: Dashboard Shell Integration [Date: Tuesday, 18 August 2026]
+--------------------------------------------------------------------------------
+- Updated DashboardPage.jsx main sidebar navigation links to clear drilldown states on click.
+- Configured overview KPI Cards to track Total Events, Anomalies Detected, Normal Events,
+  High-Risk Events, and Critical Threats.
+- Wired the live attack simulator to dynamically generate and display simulated AI predictions,
+  confidence percentages, and rule attributions in real-time.
+
+--------------------------------------------------------------------------------
+Day 9: Testing, Visual Repairs & Dark/Light Toggle [Date: Thursday, 20 August 2026]
+--------------------------------------------------------------------------------
+- Replaced custom layout components with original CSS classes and grids inside DashboardPage.jsx.
+- Verified that all borders, text labels, and gauges inside the Event Details panel,
+  the ConfidenceCard radial dial, and the table dynamically adjust to light and dark theme modes.
+- Checked sorting mechanisms, CSV exports, search inputs, and attack type counts.
+- [PREMIUM UI] Implemented custom glowing neon hover transition lifts on the KPI Overview cards.
+- [PREMIUM UI] Appended high-tech blinking console cursors to the Live Intrusion Feed Terminal.
+
+--------------------------------------------------------------------------------
+Day 10: Advanced Telemetry, Audio Synthesis & Documentation [Date: Friday, 21 August 2026]
+--------------------------------------------------------------------------------
+- Designed and built the "Cyber AI Core Telemetry" control dashboard widget showing neural accuracy,
+  inference metrics, and connection tunnels status in real-time.
+- Coded synthesized audio voice warning indicators (Speech Synthesis) and Web Audio API 
+  oscillators warning alarms for high-priority incoming alerts.
+- [VISUAL REDESIGN] Re-structured the Threat Intelligence tab into a balanced dual-column dashboard. Positioned the Calendar Activity Heatmap (left) side-by-side with the Live Threat Streams panel (right), eliminating the empty screen space.
+- [NEW FEATURE] Added an operational 'Settings' tab to the main sidebar. Configured dynamic telemetry adjustments, simulated confidence thresholds, audio chime volume triggers (with active oscillator audio-beep preview testing), and administrative cache wipes.
+- [GLOBAL UI ENHANCEMENTS] Implemented immersive digital CRT scanline screen textures across Landing, Login, and Signup page backdrops. Enhanced form input elements to utilize glowing neon focus buffers, and transformed CTAs/buttons to activate bright neon-green states with floating translate-lifts on hover.
+- Created final specification reference guides, task logs, and visual work summaries.
+- Successfully verified the live application on port 3000.
+================================================================================

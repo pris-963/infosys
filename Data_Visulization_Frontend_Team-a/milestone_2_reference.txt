@@ -1,0 +1,87 @@
+================================================================================
+           MILESTONE 2: TECHNICAL REFERENCE & SPECIFICATION SHEET
+================================================================================
+Project: Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics - Milestone 2 Specification Archive
+Workspace Root: c:\Data_Visulization_Frontend_Team-a
+
+--------------------------------------------------------------------------------
+1. OBJECTIVE OF MILESTONE 2: AI THREAT DETECTION & EXPLAINABLE AI (XAI)
+--------------------------------------------------------------------------------
+Evolving the dashboard from simple security monitoring into an AI-driven threat
+response interface. Displays model prediction classifications, confidence metrics,
+and attributes underlying rules contribution without LLM complexity.
+
+Note: Since this repository is frontend-scoped, focus is strictly on client UI.
+
+--------------------------------------------------------------------------------
+2. FRONTEND TASKS SPECIFICATIONS
+--------------------------------------------------------------------------------
+- Card Counters:
+  * Total Events, Anomalies Detected, Normal Events, High-Risk Events, Critical Threats.
+- Threat Detection Table Columns:
+  * Event ID, Event Type, Prediction, Confidence, Severity, Timestamp.
+- Anomaly Distribution Doughnut Chart:
+  * Classes: Normal, Suspicious, Critical.
+- Anomaly Trend Line Graph:
+  * Time (X-axis) vs. Number of detected anomalies (Y-axis).
+- Threat Type Bar Chart:
+  * Categories: Brute Force, Malware, Phishing, SQL Injection, Privilege Escalation.
+- Event Investigation Drilldown:
+  * Event Details: Source IP, Destination IP, User, Event Type, Timestamp, Asset, Severity, CVSS.
+  * AI Analysis: Prediction (Normal/Suspicious/Critical), Confidence (Percentage), and Reason text.
+  * Explainable AI checklist showing checked flags:
+    ✓ Failed login attempts > threshold
+    ✓ Unusual login time
+    ✓ Impossible travel detected
+    ✓ High event frequency
+
+--------------------------------------------------------------------------------
+3. DEVELOPMENT SCHEDULE (10 SPRINT DAYS)
+--------------------------------------------------------------------------------
+Day 1:  Understand new ML outputs / dataset columns mapping.
+Day 2:  Design detection UI layout and theme selectors.
+Day 3:  Threat table layout with custom badges and action links.
+Day 4:  Charts integration (anomaly line, pie, and attack vector bars).
+Day 5:  Event details panels configuration.
+Day 6:  AI analysis section (Confidence radial gauges, XAI checkboxes).
+Day 7:  API integration (Axios client setup & local fallbacks logic).
+Day 8:  Dashboard shell navigation routing integration.
+Day 9:  Testing & UI visual polishing (Light/Dark themes alignment).
+Day 10: Documentation & demo setup.
+
+--------------------------------------------------------------------------------
+4. FOLDER STRUCTURE ARCHITECTURE
+--------------------------------------------------------------------------------
+frontend/
+│
+├── src/
+│
+├── pages/
+│   ├── Dashboard.jsx
+│   ├── ThreatDetection.jsx
+│   └── EventDetails.jsx
+│
+├── components/
+│   ├── ThreatTable.jsx
+│   ├── ConfidenceCard.jsx
+│   └── AnomalyChart.jsx
+│
+├── services/
+│   └── api.js
+│
+└── charts/
+
+--------------------------------------------------------------------------------
+5. MILESTONE 2 DELIVERABLES CHECKLIST (FRONTEND FOCUS)
+--------------------------------------------------------------------------------
+- [ ] Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics UI loaded
+- [ ] Threat prediction logs table integrated
+- [ ] Confidence score radial gauges rendering
+- [ ] Anomaly distribution doughnut charts rendering
+- [ ] Threat-type attack vector bar charts rendering
+- [ ] Event investigation panel populated with metadata
+- [ ] Explainable AI threshold checklist responding to record parameters
+- [ ] API integration complete via Axios/Fetch
+- [ ] Dropdown search and category filters functioning
+- [ ] Responsive UI grid scaling
+================================================================================

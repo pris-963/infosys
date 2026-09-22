@@ -1,0 +1,36 @@
+/* ==========================================================================
+   SECURITY OPERATIONS DASHBOARD FOR THREAT DETECTION WITH RISK MITIGATION ANALYTICS — SIGNUP
+   Design System: Original Dark Cyber Glassmorphism
+   ========================================================================== */
+
+/* ── Strength Meter Container ────────────────────────────────────────────── */
+.password-strength-wrapper {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ── Bars Track ──────────────────────────────────────────────────────────── */
+.strength-bars {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.strength-bar {
+  height: 4px;
+  flex-grow: 1;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background-color 0.3s ease;
+}
+
+/* ── Strength Label ───────────────────────────────────────────────────────── */
+.strength-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #8e9fa6;
+}

@@ -1,0 +1,76 @@
+================================================================================
+           MILESTONE 1: TECHNICAL REFERENCE & SPECIFICATION SHEET
+================================================================================
+Project: Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics - Milestone 1 Specification Archive
+Contact Reference: 2023.mayank.bajaj@ves.ac.in
+Workspace Root: c:\Data_Visulization_Frontend_Team-a
+
+--------------------------------------------------------------------------------
+1. OBJECTIVE OF MILESTONE 1: DATA AGGREGATION & THREAT INTELLIGENCE LAYER
+--------------------------------------------------------------------------------
+The core goal in Milestone 1 is collecting, cleaning, standardizing, and enriching
+security event data, preparing the pipeline for ML integration in Milestone 2.
+
+Real World Input Streams (for Reference):
+- Firewall Logs: | Timestamp | Source IP | Destination IP | Action |
+- Login Logs:    | Timestamp | Username  | Failed Attempts |
+- Vulnerability: | CVE       | Severity  |
+
+--------------------------------------------------------------------------------
+2. FRONTEND TASKS SPECIFICATIONS
+--------------------------------------------------------------------------------
+- Task 1: Login Page
+  * Simple SOC Analyst Login UI panel.
+- Task 2: Dashboard Layout Sidebar
+  * Fixed navigation list: Overview, Security Events, Threat Intelligence,
+    Vulnerabilities, Analytics.
+- Task 3: KPI Overview Cards
+  * Show: Total Events, Critical Threats, High Severity Alerts, Vulnerabilities, Active Incidents.
+- Task 4: Custom Event Table Columns
+  * Time, Event Type, Severity, Source IP, Status.
+- Task 5: Threat Severity Distribution Distribution (Pie/Donut)
+  * Ratios of: Critical, High, Medium, Low severity alerts.
+- Task 6: Event Trend Graph (Line Chart)
+  * Incident volumes plotted chronologically over time.
+- Task 7: Top Attack Types (Bar Chart)
+  * Volumetric comparison: Brute Force, Malware, Phishing, Reconnaissance.
+- Task 8: Filter Controls
+  * Sort and select items by: Severity, Date, Event Type, IP Address.
+
+Frontend Folder Structure:
+frontend
+│
+├── pages
+├── components
+├── services
+├── charts
+├── assets
+├── App.jsx
+└── main.jsx
+
+--------------------------------------------------------------------------------
+3. CROSS-CHECK POINTERS & EVALUATION CRITERIA
+--------------------------------------------------------------------------------
+Frontend Validation Checks:
+- [ ] Total Security Events count loading
+- [ ] Critical Threats metrics syncing
+- [ ] High Severity Alerts dashboard indicator
+- [ ] Vulnerability Summary metrics active
+- [ ] Threat Distribution (Pie Chart) displaying slices
+- [ ] Events Over Time (Line Chart) showing timeline spikes
+- [ ] Top Attack Types (Bar Chart) matching log ratios
+- [ ] Top Affected Assets horizontal gauges rendering
+- [ ] Incident Table showing normalized parameters
+- [ ] Full-text search and filters responding dynamically
+
+--------------------------------------------------------------------------------
+4. ADD-ON IMPRESSIVE FEATURES
+--------------------------------------------------------------------------------
+- Dark Mode support
+- Export CSV data downloads
+- Search event filters
+- Chronological Threat Timeline log panel
+- Auto-Refresh Dashboard simulator loop
+- Attack Heatmap showing global geolocation vectors
+- Top Targeted Assets widget
+================================================================================

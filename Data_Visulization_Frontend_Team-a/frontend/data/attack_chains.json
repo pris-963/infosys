@@ -1,0 +1,132 @@
+[
+  {
+    "chain_id": "CHAIN-01",
+    "name": "Targeted Ransomware Campaign on Core Banking DB",
+    "summary": "External brute force on SSH credentials escalating to Log4Shell RCE, local rootkit deployment, Pass-the-Hash lateral movement, and Ransomware execution on Database-Server-01.",
+    "target_asset": "Database-Server-01",
+    "attacker_ip": "185.220.101.5",
+    "total_stages": 5,
+    "stages": [
+      {
+        "stage_number": 1,
+        "tactic": "Initial Access",
+        "technique": "T1110 (Brute Force SSH)",
+        "event_id": "EVT-1001",
+        "timestamp": "2026-07-30T01:12:00Z",
+        "source_ip": "192.168.1.45",
+        "stage_name": "Brute Force SSH Attempt",
+        "description": "Attacker launched automated dictionary attack against SSH daemon on port 22 with 12 failed authentication attempts."
+      },
+      {
+        "stage_number": 2,
+        "tactic": "Credential Access",
+        "technique": "T1110 (SSH Brute Force Success)",
+        "event_id": "EVT-1012",
+        "timestamp": "2026-07-30T02:01:33Z",
+        "source_ip": "192.168.1.45",
+        "stage_name": "Privileged Credential Compromise",
+        "description": "Attacker successfully guessed credentials for privileged admin service account."
+      },
+      {
+        "stage_number": 3,
+        "tactic": "Privilege Escalation",
+        "technique": "T1014 (Rootkit Deployment)",
+        "event_id": "EVT-1025",
+        "timestamp": "2026-07-30T03:25:00Z",
+        "source_ip": "185.220.101.7",
+        "stage_name": "Dirty Pipe Kernel Exploit",
+        "description": "Exploited CVE-2022-0847 to inject kernel ring buffer rootkit, achieving ring-0 persistence."
+      },
+      {
+        "stage_number": 4,
+        "tactic": "Lateral Movement",
+        "technique": "T1550 (Pass-the-Hash)",
+        "event_id": "EVT-1021",
+        "timestamp": "2026-07-30T02:55:10Z",
+        "source_ip": "10.0.0.77",
+        "stage_name": "NTLM Credential Replay",
+        "description": "Harvested memory hashes replayed across internal database replication interfaces."
+      },
+      {
+        "stage_number": 5,
+        "tactic": "Impact / Ransomware",
+        "technique": "T1486 (Log4j Ransomware Encryptor)",
+        "event_id": "EVT-1008",
+        "timestamp": "2026-07-30T01:40:02Z",
+        "source_ip": "185.220.101.5",
+        "stage_name": "Database Volume Encryption",
+        "description": "Critical Log4Shell JNDI payload executed binary payload attempting volume encryption."
+      }
+    ]
+  },
+  {
+    "chain_id": "CHAIN-02",
+    "name": "Finance Department Spear Phishing & Credential Harvester",
+    "summary": "Weaponized Word document phishing attachment executed on finance workstation, triggering LSASS memory dumping and privilege escalation.",
+    "target_asset": "Finance-PC-42",
+    "attacker_ip": "192.168.1.102",
+    "total_stages": 3,
+    "stages": [
+      {
+        "stage_number": 1,
+        "tactic": "Initial Access",
+        "technique": "T1566 (Phishing Link Attachment)",
+        "event_id": "EVT-1002",
+        "timestamp": "2026-07-30T01:15:22Z",
+        "source_ip": "192.168.1.102",
+        "stage_name": "Spear Phishing Ingestion",
+        "description": "Finance employee opened malicious Outlook attachment containing exploit CVE-2023-23397."
+      },
+      {
+        "stage_number": 2,
+        "tactic": "Credential Access",
+        "technique": "T1003 (LSASS Memory Dump)",
+        "event_id": "EVT-1018",
+        "timestamp": "2026-07-30T02:35:00Z",
+        "source_ip": "185.220.101.9",
+        "stage_name": "Credential Dumping",
+        "description": "Dumped cached Kerberos domain ticket granting tickets (TGT) from local security subsystem."
+      },
+      {
+        "stage_number": 3,
+        "tactic": "Privilege Escalation",
+        "technique": "T1068 (Windows Kernel Privilege Abuse)",
+        "event_id": "EVT-1009",
+        "timestamp": "2026-07-30T01:45:50Z",
+        "source_ip": "192.168.1.200",
+        "stage_name": "Local Admin Escalation",
+        "description": "Exploited CVE-2023-36884 to elevate unprivileged user jsmith to NT AUTHORITY\\SYSTEM."
+      }
+    ]
+  },
+  {
+    "chain_id": "CHAIN-03",
+    "name": "Executive Endpoint Trojan & C2 Exfiltration",
+    "summary": "Drive-by macOS trojan dropper targeting executive laptop with active command & control beaconing.",
+    "target_asset": "Executive-Mac-03",
+    "attacker_ip": "192.168.2.88",
+    "total_stages": 2,
+    "stages": [
+      {
+        "stage_number": 1,
+        "tactic": "Execution",
+        "technique": "T1204 (Trojan Dropper Execution)",
+        "event_id": "EVT-1004",
+        "timestamp": "2026-07-30T01:22:40Z",
+        "source_ip": "192.168.2.88",
+        "stage_name": "Trojan Payload Ingestion",
+        "description": "Malware dropper bypassed macOS Gatekeeper using CVE-2024-21412 signed certificate spoofing."
+      },
+      {
+        "stage_number": 2,
+        "tactic": "Execution / C2",
+        "technique": "T1204 (Trojan Dropper Secondary Stage)",
+        "event_id": "EVT-1023",
+        "timestamp": "2026-07-30T03:10:45Z",
+        "source_ip": "192.168.2.88",
+        "stage_name": "C2 Beacon Channel Established",
+        "description": "Encrypted TCP beaconing outward to hostile IP range."
+      }
+    ]
+  }
+]

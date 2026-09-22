@@ -1,0 +1,230 @@
+/* ==========================================================================
+   GLOBAL DESIGN SYSTEM & FOUNDATION TOKENS
+   Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics (M1, M2 & M3)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+/* Base Reset & Smooth Scrolling */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #020508;
+  color: #f1f5f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Custom Selection ─────────────────────────────────────────────────────── */
+::selection {
+  background: rgba(16, 185, 129, 0.35);
+  color: #ffffff;
+}
+
+.light-theme ::selection {
+  background: rgba(13, 148, 136, 0.25);
+  color: #0f172a;
+}
+
+/* ── Global Custom Scrollbar ─────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020508;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.25);
+  border-radius: 999px;
+  border: 2px solid #020508;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.55);
+}
+
+.light-theme ::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.light-theme ::-webkit-scrollbar-thumb {
+  background: rgba(100, 116, 139, 0.35);
+  border: 2px solid #f8fafc;
+}
+
+.light-theme ::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
+/* ── Focus Outline Standard ──────────────────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid #10b981;
+  outline-offset: 2px;
+}
+
+.light-theme :focus-visible {
+  outline: 2px solid #0d9488;
+}
+
+/* ── Global Keyframe Animations ──────────────────────────────────────────── */
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.45);
+  }
+}
+
+@keyframes radarSweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes badgeShine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ==========================================================================
+   BOOTSTRAP 5.3 DARK MODE INTEGRATION & RESETS
+   ========================================================================== */
+[data-bs-theme="dark"],
+:root {
+  --bs-body-bg: #020508;
+  --bs-body-color: #f1f5f9;
+  --bs-card-bg: #070f0e;
+  --bs-card-border-color: rgba(16, 185, 129, 0.1);
+  --bs-tertiary-bg: #0d1a18;
+  --bs-secondary-bg: #070f0e;
+  --bs-border-color: rgba(16, 185, 129, 0.1);
+  --bs-table-bg: transparent;
+  --bs-table-color: #f1f5f9;
+  --bs-table-border-color: rgba(16, 185, 129, 0.1);
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.02);
+  --bs-table-hover-bg: rgba(16, 185, 129, 0.05);
+  --bs-table-hover-color: #f1f5f9;
+}
+
+/* ── Universal Table & Bootstrap Reset for Dark Mode ── */
+.table,
+.table > :not(caption) > * > *,
+table,
+table > :not(caption) > * > * {
+  --bs-table-bg: transparent !important;
+  --bs-table-color: var(--text-primary, #f1f5f9) !important;
+  --bs-table-border-color: var(--border-color, rgba(16, 185, 129, 0.1)) !important;
+  background-color: transparent !important;
+  color: var(--text-primary, #f1f5f9) !important;
+  box-shadow: none !important;
+}
+
+.table thead th,
+table thead th {
+  background-color: transparent !important;
+  color: var(--text-secondary, #8e9fa6) !important;
+  border-bottom: 1px solid var(--border-color, rgba(16, 185, 129, 0.1)) !important;
+  box-shadow: none !important;
+}
+
+.table tbody td,
+table tbody td {
+  background-color: transparent !important;
+  color: var(--text-primary, #f1f5f9) !important;
+  border-bottom: 1px solid var(--border-color, rgba(16, 185, 129, 0.05)) !important;
+  box-shadow: none !important;
+}
+
+.table tbody tr:hover td,
+.table tbody tr:hover th,
+table tbody tr:hover td,
+table tbody tr:hover th {
+  background-color: rgba(16, 185, 129, 0.04) !important;
+  color: var(--text-primary, #f1f5f9) !important;
+}
+
+/* ── Bootstrap Card and Input Resets ── */
+.card {
+  background-color: var(--bg-surface, #070f0e) !important;
+  border-color: var(--border-color, rgba(16, 185, 129, 0.1)) !important;
+  color: var(--text-primary, #f1f5f9) !important;
+}
+
+.form-control,
+.form-select {
+  background-color: var(--bg-deep, #020508) !important;
+  border-color: var(--border-color, rgba(16, 185, 129, 0.15)) !important;
+  color: var(--text-primary, #f1f5f9) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25) !important;
+}
+
+/* ── Cyberpunk Glassmorphic Badge System ── */
+.badge.bg-danger-subtle {
+  background-color: rgba(239, 68, 68, 0.12) !important;
+  color: #ef4444 !important;
+  border: 1px solid rgba(239, 68, 68, 0.25) !important;
+}
+.badge.bg-warning-subtle {
+  background-color: rgba(245, 158, 11, 0.12) !important;
+  color: #f59e0b !important;
+  border: 1px solid rgba(245, 158, 11, 0.25) !important;
+}
+.badge.bg-info-subtle {
+  background-color: rgba(59, 130, 246, 0.12) !important;
+  color: #3b82f6 !important;
+  border: 1px solid rgba(59, 130, 246, 0.25) !important;
+}
+.badge.bg-success-subtle {
+  background-color: rgba(16, 185, 129, 0.12) !important;
+  color: #10b981 !important;
+  border: 1px solid rgba(16, 185, 129, 0.25) !important;
+}
+.badge.bg-primary-subtle {
+  background-color: rgba(59, 130, 246, 0.12) !important;
+  color: #60a5fa !important;
+  border: 1px solid rgba(59, 130, 246, 0.25) !important;
+}
+.badge.bg-secondary-subtle {
+  background-color: rgba(148, 163, 184, 0.12) !important;
+  color: #94a3b8 !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+}
+

@@ -1,0 +1,1827 @@
+[
+  {
+    "event_id": "EVT-1001",
+    "timestamp": "2026-07-30T01:12:00Z",
+    "source_ip": "192.168.1.45",
+    "destination_ip": "10.0.0.12",
+    "username": "admin",
+    "event_type": "Brute Force",
+    "protocol": "SSH",
+    "source_country": "CN",
+    "destination_country": "US",
+    "device_name": "srv-db-01",
+    "os": "Ubuntu 22.04",
+    "event_status": "Blocked",
+    "severity": "CRITICAL",
+    "failed_login_attempts": "12",
+    "malware_detected": "false",
+    "vulnerability_id": "CVE-2023-38606",
+    "cvss_score": "9.8",
+    "asset_name": "Database-Server-01",
+    "department": "IT",
+    "severity_score": "9.8",
+    "threat_match": "True",
+    "mitre_id": "T1110",
+    "technique_name": "Brute Force",
+    "tactic": "Credential Access",
+    "risk_score": "95",
+    "is_high_risk": "true",
+    "id": "EVT-1001",
+    "time": "2026-07-30T01:12:00Z",
+    "name": "Brute Force",
+    "source": "192.168.1.45",
+    "target": "10.0.0.12",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 95,
+    "reasons": [
+      "12 failed login attempts",
+      "After-hours operational activity",
+      "Targeting known vulnerability CVE-2023-38606"
+    ],
+    "m3_risk_score": 94,
+    "m3_priority": "Critical",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 95,
+        "weight": 0.25,
+        "points": 24
+      },
+      "mlConfidence": {
+        "value": 95,
+        "weight": 0.25,
+        "points": 24
+      },
+      "assetCriticality": {
+        "value": 100,
+        "weight": 0.2,
+        "points": 20,
+        "tier": "Critical",
+        "type": "Production Database"
+      },
+      "vulnerabilityExposure": {
+        "value": 98,
+        "weight": 0.2,
+        "points": 20,
+        "cve": "CVE-2023-38606",
+        "cvss": "9.8"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1002",
+    "timestamp": "2026-07-30T01:15:22Z",
+    "source_ip": "192.168.1.102",
+    "destination_ip": "10.0.0.15",
+    "username": "jsmith",
+    "event_type": "Phishing Link",
+    "protocol": "HTTPS",
+    "source_country": "RU",
+    "destination_country": "US",
+    "device_name": "workstation-42",
+    "os": "Windows 11",
+    "event_status": "Flagged",
+    "severity": "HIGH",
+    "failed_login_attempts": "0",
+    "malware_detected": "true",
+    "vulnerability_id": "CVE-2023-23397",
+    "cvss_score": "8.1",
+    "asset_name": "Finance-PC-42",
+    "department": "Finance",
+    "severity_score": "8.1",
+    "threat_match": "True",
+    "mitre_id": "T1566",
+    "technique_name": "Phishing",
+    "tactic": "Initial Access",
+    "risk_score": "82",
+    "is_high_risk": "true",
+    "id": "EVT-1002",
+    "time": "2026-07-30T01:15:22Z",
+    "name": "Phishing Link",
+    "source": "192.168.1.102",
+    "target": "10.0.0.15",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 82,
+    "reasons": [
+      "After-hours operational activity",
+      "Known malware signature detected",
+      "Targeting known vulnerability CVE-2023-23397"
+    ],
+    "m3_risk_score": 75,
+    "m3_priority": "High",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 75,
+        "weight": 0.25,
+        "points": 19
+      },
+      "mlConfidence": {
+        "value": 82,
+        "weight": 0.25,
+        "points": 21
+      },
+      "assetCriticality": {
+        "value": 65,
+        "weight": 0.2,
+        "points": 13,
+        "tier": "Medium",
+        "type": "Finance Workstation"
+      },
+      "vulnerabilityExposure": {
+        "value": 81,
+        "weight": 0.2,
+        "points": 16,
+        "cve": "CVE-2023-23397",
+        "cvss": "8.1"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1003",
+    "timestamp": "2026-07-30T01:18:05Z",
+    "source_ip": "172.16.0.8",
+    "destination_ip": "10.0.0.5",
+    "username": "mrodriguez",
+    "event_type": "Unusual Login",
+    "protocol": "Kerberos",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "auth-srv-01",
+    "os": "Windows Server 2022",
+    "event_status": "Success",
+    "severity": "LOW",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "0.0",
+    "asset_name": "Domain-Controller",
+    "department": "IT",
+    "severity_score": "2.1",
+    "threat_match": "False",
+    "mitre_id": "T1078",
+    "technique_name": "Valid Accounts",
+    "tactic": "Persistence",
+    "risk_score": "15",
+    "is_high_risk": "false",
+    "id": "EVT-1003",
+    "time": "2026-07-30T01:18:05Z",
+    "name": "Unusual Login",
+    "source": "172.16.0.8",
+    "target": "10.0.0.5",
+    "status": "RESOLVED",
+    "prediction": "Normal",
+    "confidence": 85,
+    "reasons": [
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 50,
+    "m3_priority": "Medium",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 20,
+        "weight": 0.25,
+        "points": 5
+      },
+      "mlConfidence": {
+        "value": 85,
+        "weight": 0.25,
+        "points": 21
+      },
+      "assetCriticality": {
+        "value": 85,
+        "weight": 0.2,
+        "points": 17,
+        "tier": "High",
+        "type": "Domain Controller"
+      },
+      "vulnerabilityExposure": {
+        "value": 0,
+        "weight": 0.2,
+        "points": 0,
+        "cve": "None",
+        "cvss": "0.0"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1004",
+    "timestamp": "2026-07-30T01:22:40Z",
+    "source_ip": "192.168.2.88",
+    "destination_ip": "10.0.0.8",
+    "username": "dlee",
+    "event_type": "Malware Execution",
+    "protocol": "HTTP",
+    "source_country": "KP",
+    "destination_country": "US",
+    "device_name": "exec-laptop-03",
+    "os": "macOS Sonoma",
+    "event_status": "Quarantined",
+    "severity": "CRITICAL",
+    "failed_login_attempts": "0",
+    "malware_detected": "true",
+    "vulnerability_id": "CVE-2024-21412",
+    "cvss_score": "9.0",
+    "asset_name": "Executive-Mac-03",
+    "department": "Management",
+    "severity_score": "9.4",
+    "threat_match": "True",
+    "mitre_id": "T1204",
+    "technique_name": "User Execution",
+    "tactic": "Execution",
+    "risk_score": "91",
+    "is_high_risk": "true",
+    "id": "EVT-1004",
+    "time": "2026-07-30T01:22:40Z",
+    "name": "Malware Execution",
+    "source": "192.168.2.88",
+    "target": "10.0.0.8",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 91,
+    "reasons": [
+      "After-hours operational activity",
+      "Known malware signature detected",
+      "Targeting known vulnerability CVE-2024-21412"
+    ],
+    "m3_risk_score": 85,
+    "m3_priority": "Critical",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 95,
+        "weight": 0.25,
+        "points": 24
+      },
+      "mlConfidence": {
+        "value": 91,
+        "weight": 0.25,
+        "points": 23
+      },
+      "assetCriticality": {
+        "value": 65,
+        "weight": 0.2,
+        "points": 13,
+        "tier": "Medium",
+        "type": "Executive Laptop"
+      },
+      "vulnerabilityExposure": {
+        "value": 90,
+        "weight": 0.2,
+        "points": 18,
+        "cve": "CVE-2024-21412",
+        "cvss": "9.0"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1005",
+    "timestamp": "2026-07-30T01:25:11Z",
+    "source_ip": "10.0.4.12",
+    "destination_ip": "10.0.0.1",
+    "username": "system",
+    "event_type": "Port Scan",
+    "protocol": "TCP",
+    "source_country": "IR",
+    "destination_country": "US",
+    "device_name": "firewall-internal",
+    "os": "Linux",
+    "event_status": "Logged",
+    "severity": "MEDIUM",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "4.5",
+    "asset_name": "Core-Router",
+    "department": "Infrastructure",
+    "severity_score": "5.0",
+    "threat_match": "False",
+    "mitre_id": "T1046",
+    "technique_name": "Network Service Discovery",
+    "tactic": "Discovery",
+    "risk_score": "48",
+    "is_high_risk": "false",
+    "id": "EVT-1005",
+    "time": "2026-07-30T01:25:11Z",
+    "name": "Port Scan",
+    "source": "10.0.4.12",
+    "target": "10.0.0.1",
+    "status": "RESOLVED",
+    "prediction": "Normal",
+    "confidence": 52,
+    "reasons": [
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 61,
+    "m3_priority": "High",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 50,
+        "weight": 0.25,
+        "points": 13
+      },
+      "mlConfidence": {
+        "value": 52,
+        "weight": 0.25,
+        "points": 13
+      },
+      "assetCriticality": {
+        "value": 95,
+        "weight": 0.2,
+        "points": 19,
+        "tier": "Critical",
+        "type": "Backbone Router"
+      },
+      "vulnerabilityExposure": {
+        "value": 45,
+        "weight": 0.2,
+        "points": 9,
+        "cve": "None",
+        "cvss": "4.5"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1006",
+    "timestamp": "2026-07-30T01:30:00Z",
+    "source_ip": "192.168.1.55",
+    "destination_ip": "10.0.0.22",
+    "username": "akhan",
+    "event_type": "SQL Injection",
+    "protocol": "HTTP",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "web-app-01",
+    "os": "Ubuntu 20.04",
+    "event_status": "Blocked",
+    "severity": "HIGH",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "CVE-2022-26134",
+    "cvss_score": "8.5",
+    "asset_name": "Web-Frontend",
+    "department": "Engineering",
+    "severity_score": "8.5",
+    "threat_match": "True",
+    "mitre_id": "T1190",
+    "technique_name": "Exploit Public-Facing Application",
+    "tactic": "Initial Access",
+    "risk_score": "78",
+    "is_high_risk": "true",
+    "id": "EVT-1006",
+    "time": "2026-07-30T01:30:00Z",
+    "name": "SQL Injection",
+    "source": "192.168.1.55",
+    "target": "10.0.0.22",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 78,
+    "reasons": [
+      "After-hours operational activity",
+      "Targeting known vulnerability CVE-2022-26134"
+    ],
+    "m3_risk_score": 77,
+    "m3_priority": "High",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 75,
+        "weight": 0.25,
+        "points": 19
+      },
+      "mlConfidence": {
+        "value": 78,
+        "weight": 0.25,
+        "points": 20
+      },
+      "assetCriticality": {
+        "value": 75,
+        "weight": 0.2,
+        "points": 15,
+        "tier": "High",
+        "type": "Web Frontend"
+      },
+      "vulnerabilityExposure": {
+        "value": 85,
+        "weight": 0.2,
+        "points": 17,
+        "cve": "CVE-2022-26134",
+        "cvss": "8.5"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1007",
+    "timestamp": "2026-07-30T01:34:19Z",
+    "source_ip": "192.168.3.14",
+    "destination_ip": "10.0.0.99",
+    "username": "guest_user",
+    "event_type": "Unauthorized Access",
+    "protocol": "SMB",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "file-share-02",
+    "os": "Windows Server 2019",
+    "event_status": "Denied",
+    "severity": "MEDIUM",
+    "failed_login_attempts": "3",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "3.2",
+    "asset_name": "Shared-Storage",
+    "department": "HR",
+    "severity_score": "4.1",
+    "threat_match": "False",
+    "mitre_id": "T1021",
+    "technique_name": "Remote Services",
+    "tactic": "Lateral Movement",
+    "risk_score": "38",
+    "is_high_risk": "false",
+    "id": "EVT-1007",
+    "time": "2026-07-30T01:34:19Z",
+    "name": "Unauthorized Access",
+    "source": "192.168.3.14",
+    "target": "10.0.0.99",
+    "status": "RESOLVED",
+    "prediction": "Normal",
+    "confidence": 62,
+    "reasons": [
+      "3 failed login attempts",
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 51,
+    "m3_priority": "Medium",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 50,
+        "weight": 0.25,
+        "points": 13
+      },
+      "mlConfidence": {
+        "value": 62,
+        "weight": 0.25,
+        "points": 16
+      },
+      "assetCriticality": {
+        "value": 50,
+        "weight": 0.2,
+        "points": 10,
+        "tier": "Medium",
+        "type": "Shared Storage"
+      },
+      "vulnerabilityExposure": {
+        "value": 32,
+        "weight": 0.2,
+        "points": 6,
+        "cve": "None",
+        "cvss": "3.2"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1008",
+    "timestamp": "2026-07-30T01:40:02Z",
+    "source_ip": "185.220.101.5",
+    "destination_ip": "10.0.0.12",
+    "username": "root",
+    "event_type": "Ransomware Activity",
+    "protocol": "SMB2",
+    "source_country": "RU",
+    "destination_country": "US",
+    "device_name": "srv-db-01",
+    "os": "Ubuntu 22.04",
+    "event_status": "Alerted",
+    "severity": "CRITICAL",
+    "failed_login_attempts": "0",
+    "malware_detected": "true",
+    "vulnerability_id": "CVE-2021-44228",
+    "cvss_score": "10.0",
+    "asset_name": "Database-Server-01",
+    "department": "IT",
+    "severity_score": "10.0",
+    "threat_match": "True",
+    "mitre_id": "T1486",
+    "technique_name": "Data Encrypted for Impact",
+    "tactic": "Impact",
+    "risk_score": "99",
+    "is_high_risk": "true",
+    "id": "EVT-1008",
+    "time": "2026-07-30T01:40:02Z",
+    "name": "Ransomware Activity",
+    "source": "185.220.101.5",
+    "target": "10.0.0.12",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 99,
+    "reasons": [
+      "After-hours operational activity",
+      "Known malware signature detected",
+      "Targeting known vulnerability CVE-2021-44228"
+    ],
+    "m3_risk_score": 99,
+    "m3_priority": "Critical",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 95,
+        "weight": 0.25,
+        "points": 24
+      },
+      "mlConfidence": {
+        "value": 99,
+        "weight": 0.25,
+        "points": 25
+      },
+      "assetCriticality": {
+        "value": 100,
+        "weight": 0.2,
+        "points": 20,
+        "tier": "Critical",
+        "type": "Production Database"
+      },
+      "vulnerabilityExposure": {
+        "value": 100,
+        "weight": 0.2,
+        "points": 20,
+        "cve": "CVE-2021-44228",
+        "cvss": "10.0"
+      },
+      "threatIntelligence": {
+        "value": 100,
+        "weight": 0.1,
+        "points": 10
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1009",
+    "timestamp": "2026-07-30T01:45:50Z",
+    "source_ip": "192.168.1.200",
+    "destination_ip": "10.0.0.15",
+    "username": "jsmith",
+    "event_type": "Privilege Escalation",
+    "protocol": "Local",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "workstation-42",
+    "os": "Windows 11",
+    "event_status": "Investigating",
+    "severity": "HIGH",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "CVE-2023-36884",
+    "cvss_score": "7.8",
+    "asset_name": "Finance-PC-42",
+    "department": "Finance",
+    "severity_score": "7.8",
+    "threat_match": "True",
+    "mitre_id": "T1068",
+    "technique_name": "Exploitation for Privilege Escalation",
+    "tactic": "Privilege Escalation",
+    "risk_score": "75",
+    "is_high_risk": "true",
+    "id": "EVT-1009",
+    "time": "2026-07-30T01:45:50Z",
+    "name": "Privilege Escalation",
+    "source": "192.168.1.200",
+    "target": "10.0.0.15",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 75,
+    "reasons": [
+      "After-hours operational activity",
+      "Targeting known vulnerability CVE-2023-36884"
+    ],
+    "m3_risk_score": 73,
+    "m3_priority": "High",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 75,
+        "weight": 0.25,
+        "points": 19
+      },
+      "mlConfidence": {
+        "value": 75,
+        "weight": 0.25,
+        "points": 19
+      },
+      "assetCriticality": {
+        "value": 65,
+        "weight": 0.2,
+        "points": 13,
+        "tier": "Medium",
+        "type": "Finance Workstation"
+      },
+      "vulnerabilityExposure": {
+        "value": 78,
+        "weight": 0.2,
+        "points": 16,
+        "cve": "CVE-2023-36884",
+        "cvss": "7.8"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1010",
+    "timestamp": "2026-07-30T01:50:12Z",
+    "source_ip": "10.0.2.15",
+    "destination_ip": "10.0.0.50",
+    "username": "svc_backup",
+    "event_type": "Data Exfiltration",
+    "protocol": "DNS",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "backup-node",
+    "os": "CentOS 8",
+    "event_status": "Detected",
+    "severity": "HIGH",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "6.5",
+    "asset_name": "Backup-Storage",
+    "department": "Operations",
+    "severity_score": "7.2",
+    "threat_match": "True",
+    "mitre_id": "T1048",
+    "technique_name": "Exfiltration Over Alternative Protocol",
+    "tactic": "Exfiltration",
+    "risk_score": "79",
+    "is_high_risk": "true",
+    "id": "EVT-1010",
+    "time": "2026-07-30T01:50:12Z",
+    "name": "Data Exfiltration",
+    "source": "10.0.2.15",
+    "target": "10.0.0.50",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 79,
+    "reasons": [
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 71,
+    "m3_priority": "High",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 75,
+        "weight": 0.25,
+        "points": 19
+      },
+      "mlConfidence": {
+        "value": 79,
+        "weight": 0.25,
+        "points": 20
+      },
+      "assetCriticality": {
+        "value": 60,
+        "weight": 0.2,
+        "points": 12,
+        "tier": "Medium",
+        "type": "Backup Server"
+      },
+      "vulnerabilityExposure": {
+        "value": 65,
+        "weight": 0.2,
+        "points": 13,
+        "cve": "None",
+        "cvss": "6.5"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1011",
+    "timestamp": "2026-07-30T01:55:01Z",
+    "source_ip": "192.168.1.18",
+    "destination_ip": "10.0.0.5",
+    "username": "bwilson",
+    "event_type": "Failed Login",
+    "protocol": "LDAP",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "auth-srv-01",
+    "os": "Windows Server 2022",
+    "event_status": "Failed",
+    "severity": "LOW",
+    "failed_login_attempts": "5",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "0.0",
+    "asset_name": "Domain-Controller",
+    "department": "IT",
+    "severity_score": "2.5",
+    "threat_match": "False",
+    "mitre_id": "T1110",
+    "technique_name": "Brute Force",
+    "tactic": "Credential Access",
+    "risk_score": "22",
+    "is_high_risk": "false",
+    "id": "EVT-1011",
+    "time": "2026-07-30T01:55:01Z",
+    "name": "Failed Login",
+    "source": "192.168.1.18",
+    "target": "10.0.0.5",
+    "status": "RESOLVED",
+    "prediction": "Normal",
+    "confidence": 78,
+    "reasons": [
+      "5 failed login attempts",
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 49,
+    "m3_priority": "Medium",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 20,
+        "weight": 0.25,
+        "points": 5
+      },
+      "mlConfidence": {
+        "value": 78,
+        "weight": 0.25,
+        "points": 20
+      },
+      "assetCriticality": {
+        "value": 85,
+        "weight": 0.2,
+        "points": 17,
+        "tier": "High",
+        "type": "Domain Controller"
+      },
+      "vulnerabilityExposure": {
+        "value": 0,
+        "weight": 0.2,
+        "points": 0,
+        "cve": "None",
+        "cvss": "0.0"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1012",
+    "timestamp": "2026-07-30T02:01:33Z",
+    "source_ip": "192.168.1.45",
+    "destination_ip": "10.0.0.12",
+    "username": "admin",
+    "event_type": "Brute Force",
+    "protocol": "SSH",
+    "source_country": "CN",
+    "destination_country": "US",
+    "device_name": "srv-db-01",
+    "os": "Ubuntu 22.04",
+    "event_status": "Blocked",
+    "severity": "CRITICAL",
+    "failed_login_attempts": "25",
+    "malware_detected": "false",
+    "vulnerability_id": "CVE-2023-38606",
+    "cvss_score": "9.8",
+    "asset_name": "Database-Server-01",
+    "department": "IT",
+    "severity_score": "9.8",
+    "threat_match": "True",
+    "mitre_id": "T1110",
+    "technique_name": "Brute Force",
+    "tactic": "Credential Access",
+    "risk_score": "96",
+    "is_high_risk": "true",
+    "id": "EVT-1012",
+    "time": "2026-07-30T02:01:33Z",
+    "name": "Brute Force",
+    "source": "192.168.1.45",
+    "target": "10.0.0.12",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 96,
+    "reasons": [
+      "25 failed login attempts",
+      "After-hours operational activity",
+      "Targeting known vulnerability CVE-2023-38606"
+    ],
+    "m3_risk_score": 94,
+    "m3_priority": "Critical",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 95,
+        "weight": 0.25,
+        "points": 24
+      },
+      "mlConfidence": {
+        "value": 96,
+        "weight": 0.25,
+        "points": 24
+      },
+      "assetCriticality": {
+        "value": 100,
+        "weight": 0.2,
+        "points": 20,
+        "tier": "Critical",
+        "type": "Production Database"
+      },
+      "vulnerabilityExposure": {
+        "value": 98,
+        "weight": 0.2,
+        "points": 20,
+        "cve": "CVE-2023-38606",
+        "cvss": "9.8"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1013",
+    "timestamp": "2026-07-30T02:08:44Z",
+    "source_ip": "192.168.4.10",
+    "destination_ip": "10.0.0.100",
+    "username": "tchen",
+    "event_type": "Suspicious PowerShell",
+    "protocol": "WinRM",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "dev-box-09",
+    "os": "Windows 11",
+    "event_status": "Blocked",
+    "severity": "HIGH",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "CVE-2022-30190",
+    "cvss_score": "7.8",
+    "asset_name": "Dev-Workstation",
+    "department": "Engineering",
+    "severity_score": "7.9",
+    "threat_match": "True",
+    "mitre_id": "T1059",
+    "technique_name": "Command and Scripting Interpreter",
+    "tactic": "Execution",
+    "risk_score": "74",
+    "is_high_risk": "true",
+    "id": "EVT-1013",
+    "time": "2026-07-30T02:08:44Z",
+    "name": "Suspicious PowerShell",
+    "source": "192.168.4.10",
+    "target": "10.0.0.100",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 74,
+    "reasons": [
+      "After-hours operational activity",
+      "Targeting known vulnerability CVE-2022-30190"
+    ],
+    "m3_risk_score": 70,
+    "m3_priority": "High",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 75,
+        "weight": 0.25,
+        "points": 19
+      },
+      "mlConfidence": {
+        "value": 74,
+        "weight": 0.25,
+        "points": 19
+      },
+      "assetCriticality": {
+        "value": 50,
+        "weight": 0.2,
+        "points": 10,
+        "tier": "Medium",
+        "type": "Dev Workstation"
+      },
+      "vulnerabilityExposure": {
+        "value": 78,
+        "weight": 0.2,
+        "points": 16,
+        "cve": "CVE-2022-30190",
+        "cvss": "7.8"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1014",
+    "timestamp": "2026-07-30T02:12:10Z",
+    "source_ip": "10.0.0.55",
+    "destination_ip": "10.0.0.1",
+    "username": "monitor",
+    "event_type": "ICMP Flood",
+    "protocol": "ICMP",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "firewall-internal",
+    "os": "Linux",
+    "event_status": "Mitigated",
+    "severity": "MEDIUM",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "2.0",
+    "asset_name": "Core-Router",
+    "department": "Infrastructure",
+    "severity_score": "3.0",
+    "threat_match": "False",
+    "mitre_id": "T1498",
+    "technique_name": "Network Denial of Service",
+    "tactic": "Impact",
+    "risk_score": "28",
+    "is_high_risk": "false",
+    "id": "EVT-1014",
+    "time": "2026-07-30T02:12:10Z",
+    "name": "ICMP Flood",
+    "source": "10.0.0.55",
+    "target": "10.0.0.1",
+    "status": "RESOLVED",
+    "prediction": "Normal",
+    "confidence": 72,
+    "reasons": [
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 61,
+    "m3_priority": "High",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 50,
+        "weight": 0.25,
+        "points": 13
+      },
+      "mlConfidence": {
+        "value": 72,
+        "weight": 0.25,
+        "points": 18
+      },
+      "assetCriticality": {
+        "value": 95,
+        "weight": 0.2,
+        "points": 19,
+        "tier": "Critical",
+        "type": "Backbone Router"
+      },
+      "vulnerabilityExposure": {
+        "value": 20,
+        "weight": 0.2,
+        "points": 4,
+        "cve": "None",
+        "cvss": "2.0"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1015",
+    "timestamp": "2026-07-30T02:18:25Z",
+    "source_ip": "192.168.1.99",
+    "destination_ip": "10.0.0.12",
+    "username": "db_admin",
+    "event_type": "DDoS Attempt",
+    "protocol": "UDP",
+    "source_country": "RO",
+    "destination_country": "US",
+    "device_name": "srv-db-01",
+    "os": "Ubuntu 22.04",
+    "event_status": "Mitigated",
+    "severity": "HIGH",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "6.8",
+    "asset_name": "Database-Server-01",
+    "department": "IT",
+    "severity_score": "7.0",
+    "threat_match": "False",
+    "mitre_id": "T1498",
+    "technique_name": "Network Denial of Service",
+    "tactic": "Impact",
+    "risk_score": "71",
+    "is_high_risk": "true",
+    "id": "EVT-1015",
+    "time": "2026-07-30T02:18:25Z",
+    "name": "DDoS Attempt",
+    "source": "192.168.1.99",
+    "target": "10.0.0.12",
+    "status": "UNRESOLVED",
+    "prediction": "Suspicious",
+    "confidence": 71,
+    "reasons": [
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 77,
+    "m3_priority": "High",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 75,
+        "weight": 0.25,
+        "points": 19
+      },
+      "mlConfidence": {
+        "value": 71,
+        "weight": 0.25,
+        "points": 18
+      },
+      "assetCriticality": {
+        "value": 100,
+        "weight": 0.2,
+        "points": 20,
+        "tier": "Critical",
+        "type": "Production Database"
+      },
+      "vulnerabilityExposure": {
+        "value": 68,
+        "weight": 0.2,
+        "points": 14,
+        "cve": "None",
+        "cvss": "6.8"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1016",
+    "timestamp": "2026-07-30T02:22:11Z",
+    "source_ip": "192.168.2.12",
+    "destination_ip": "10.0.0.88",
+    "username": "eparker",
+    "event_type": "Zero-Day Exploit",
+    "protocol": "HTTPS",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "mail-srv-01",
+    "os": "Exchange 2019",
+    "event_status": "Quarantined",
+    "severity": "CRITICAL",
+    "failed_login_attempts": "0",
+    "malware_detected": "true",
+    "vulnerability_id": "CVE-2024-21410",
+    "cvss_score": "9.8",
+    "asset_name": "Mail-Server",
+    "department": "Operations",
+    "severity_score": "9.7",
+    "threat_match": "True",
+    "mitre_id": "T1190",
+    "technique_name": "Exploit Public-Facing Application",
+    "tactic": "Initial Access",
+    "risk_score": "98",
+    "is_high_risk": "true",
+    "id": "EVT-1016",
+    "time": "2026-07-30T02:22:11Z",
+    "name": "Zero-Day Exploit",
+    "source": "192.168.2.12",
+    "target": "10.0.0.88",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 98,
+    "reasons": [
+      "After-hours operational activity",
+      "Known malware signature detected",
+      "Targeting known vulnerability CVE-2024-21410"
+    ],
+    "m3_risk_score": 90,
+    "m3_priority": "Critical",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 95,
+        "weight": 0.25,
+        "points": 24
+      },
+      "mlConfidence": {
+        "value": 98,
+        "weight": 0.25,
+        "points": 25
+      },
+      "assetCriticality": {
+        "value": 75,
+        "weight": 0.2,
+        "points": 15,
+        "tier": "High",
+        "type": "Exchange Mail Server"
+      },
+      "vulnerabilityExposure": {
+        "value": 98,
+        "weight": 0.2,
+        "points": 20,
+        "cve": "CVE-2024-21410",
+        "cvss": "9.8"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1017",
+    "timestamp": "2026-07-30T02:29:40Z",
+    "source_ip": "10.0.1.5",
+    "destination_ip": "10.0.0.5",
+    "username": "system",
+    "event_type": "Policy Violation",
+    "protocol": "HTTP",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "workstation-11",
+    "os": "Windows 10",
+    "event_status": "Logged",
+    "severity": "LOW",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "0.0",
+    "asset_name": "General-PC",
+    "department": "HR",
+    "severity_score": "1.0",
+    "threat_match": "False",
+    "mitre_id": "T1071",
+    "technique_name": "Application Layer Protocol",
+    "tactic": "Command and Control",
+    "risk_score": "10",
+    "is_high_risk": "false",
+    "id": "EVT-1017",
+    "time": "2026-07-30T02:29:40Z",
+    "name": "Policy Violation",
+    "source": "10.0.1.5",
+    "target": "10.0.0.5",
+    "status": "RESOLVED",
+    "prediction": "Normal",
+    "confidence": 90,
+    "reasons": [
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 40,
+    "m3_priority": "Low",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 20,
+        "weight": 0.25,
+        "points": 5
+      },
+      "mlConfidence": {
+        "value": 90,
+        "weight": 0.25,
+        "points": 23
+      },
+      "assetCriticality": {
+        "value": 25,
+        "weight": 0.2,
+        "points": 5,
+        "tier": "Low",
+        "type": "General Workstation"
+      },
+      "vulnerabilityExposure": {
+        "value": 0,
+        "weight": 0.2,
+        "points": 0,
+        "cve": "None",
+        "cvss": "0.0"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1018",
+    "timestamp": "2026-07-30T02:35:00Z",
+    "source_ip": "185.220.101.9",
+    "destination_ip": "10.0.0.15",
+    "username": "jsmith",
+    "event_type": "Credential Dumping",
+    "protocol": "LSASS",
+    "source_country": "RU",
+    "destination_country": "US",
+    "device_name": "workstation-42",
+    "os": "Windows 11",
+    "event_status": "Blocked",
+    "severity": "CRITICAL",
+    "failed_login_attempts": "0",
+    "malware_detected": "true",
+    "vulnerability_id": "CVE-2023-23397",
+    "cvss_score": "8.1",
+    "asset_name": "Finance-PC-42",
+    "department": "Finance",
+    "severity_score": "9.1",
+    "threat_match": "True",
+    "mitre_id": "T1003",
+    "technique_name": "OS Credential Dumping",
+    "tactic": "Credential Access",
+    "risk_score": "92",
+    "is_high_risk": "true",
+    "id": "EVT-1018",
+    "time": "2026-07-30T02:35:00Z",
+    "name": "Credential Dumping",
+    "source": "185.220.101.9",
+    "target": "10.0.0.15",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 92,
+    "reasons": [
+      "After-hours operational activity",
+      "Known malware signature detected",
+      "Targeting known vulnerability CVE-2023-23397"
+    ],
+    "m3_risk_score": 86,
+    "m3_priority": "Critical",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 95,
+        "weight": 0.25,
+        "points": 24
+      },
+      "mlConfidence": {
+        "value": 92,
+        "weight": 0.25,
+        "points": 23
+      },
+      "assetCriticality": {
+        "value": 65,
+        "weight": 0.2,
+        "points": 13,
+        "tier": "Medium",
+        "type": "Finance Workstation"
+      },
+      "vulnerabilityExposure": {
+        "value": 81,
+        "weight": 0.2,
+        "points": 16,
+        "cve": "CVE-2023-23397",
+        "cvss": "8.1"
+      },
+      "threatIntelligence": {
+        "value": 100,
+        "weight": 0.1,
+        "points": 10
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1019",
+    "timestamp": "2026-07-30T02:41:15Z",
+    "source_ip": "192.168.1.102",
+    "destination_ip": "10.0.0.1",
+    "username": "jsmith",
+    "event_type": "Command Injection",
+    "protocol": "HTTPS",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "web-app-01",
+    "os": "Ubuntu 20.04",
+    "event_status": "Blocked",
+    "severity": "HIGH",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "CVE-2021-44228",
+    "cvss_score": "10.0",
+    "asset_name": "Web-Frontend",
+    "department": "Engineering",
+    "severity_score": "8.8",
+    "threat_match": "True",
+    "mitre_id": "T1059",
+    "technique_name": "Command and Scripting Interpreter",
+    "tactic": "Execution",
+    "risk_score": "85",
+    "is_high_risk": "true",
+    "id": "EVT-1019",
+    "time": "2026-07-30T02:41:15Z",
+    "name": "Command Injection",
+    "source": "192.168.1.102",
+    "target": "10.0.0.1",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 85,
+    "reasons": [
+      "After-hours operational activity",
+      "Targeting known vulnerability CVE-2021-44228"
+    ],
+    "m3_risk_score": 82,
+    "m3_priority": "Critical",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 75,
+        "weight": 0.25,
+        "points": 19
+      },
+      "mlConfidence": {
+        "value": 85,
+        "weight": 0.25,
+        "points": 21
+      },
+      "assetCriticality": {
+        "value": 75,
+        "weight": 0.2,
+        "points": 15,
+        "tier": "High",
+        "type": "Web Frontend"
+      },
+      "vulnerabilityExposure": {
+        "value": 100,
+        "weight": 0.2,
+        "points": 20,
+        "cve": "CVE-2021-44228",
+        "cvss": "10.0"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1020",
+    "timestamp": "2026-07-30T02:48:50Z",
+    "source_ip": "192.168.5.88",
+    "destination_ip": "10.0.0.2",
+    "username": "slawrence",
+    "event_type": "XSS Attack",
+    "protocol": "HTTP",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "portal-web",
+    "os": "RHEL 8",
+    "event_status": "Resolved",
+    "severity": "MEDIUM",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "5.2",
+    "asset_name": "Portal-Server",
+    "department": "Sales",
+    "severity_score": "5.2",
+    "threat_match": "False",
+    "mitre_id": "T1189",
+    "technique_name": "Drive-by Compromise",
+    "tactic": "Initial Access",
+    "risk_score": "45",
+    "is_high_risk": "false",
+    "id": "EVT-1020",
+    "time": "2026-07-30T02:48:50Z",
+    "name": "XSS Attack",
+    "source": "192.168.5.88",
+    "target": "10.0.0.2",
+    "status": "RESOLVED",
+    "prediction": "Normal",
+    "confidence": 55,
+    "reasons": [
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 51,
+    "m3_priority": "Medium",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 50,
+        "weight": 0.25,
+        "points": 13
+      },
+      "mlConfidence": {
+        "value": 55,
+        "weight": 0.25,
+        "points": 14
+      },
+      "assetCriticality": {
+        "value": 35,
+        "weight": 0.2,
+        "points": 7,
+        "tier": "Low",
+        "type": "Staging Portal"
+      },
+      "vulnerabilityExposure": {
+        "value": 52,
+        "weight": 0.2,
+        "points": 10,
+        "cve": "None",
+        "cvss": "5.2"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1021",
+    "timestamp": "2026-07-30T02:55:10Z",
+    "source_ip": "10.0.0.77",
+    "destination_ip": "10.0.0.12",
+    "username": "admin",
+    "event_type": "Pass-the-Hash",
+    "protocol": "NTLM",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "srv-db-01",
+    "os": "Ubuntu 22.04",
+    "event_status": "Alerted",
+    "severity": "HIGH",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "6.9",
+    "asset_name": "Database-Server-01",
+    "department": "IT",
+    "severity_score": "7.5",
+    "threat_match": "True",
+    "mitre_id": "T1550",
+    "technique_name": "Use Alternate Authentication Material",
+    "tactic": "Defense Evasion",
+    "risk_score": "76",
+    "is_high_risk": "true",
+    "id": "EVT-1021",
+    "time": "2026-07-30T02:55:10Z",
+    "name": "Pass-the-Hash",
+    "source": "10.0.0.77",
+    "target": "10.0.0.12",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 76,
+    "reasons": [
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 79,
+    "m3_priority": "High",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 75,
+        "weight": 0.25,
+        "points": 19
+      },
+      "mlConfidence": {
+        "value": 76,
+        "weight": 0.25,
+        "points": 19
+      },
+      "assetCriticality": {
+        "value": 100,
+        "weight": 0.2,
+        "points": 20,
+        "tier": "Critical",
+        "type": "Production Database"
+      },
+      "vulnerabilityExposure": {
+        "value": 69,
+        "weight": 0.2,
+        "points": 14,
+        "cve": "None",
+        "cvss": "6.9"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1022",
+    "timestamp": "2026-07-30T03:02:00Z",
+    "source_ip": "192.168.1.15",
+    "destination_ip": "10.0.0.5",
+    "username": "mrodriguez",
+    "event_type": "Password Spray",
+    "protocol": "LDAP",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "auth-srv-01",
+    "os": "Windows Server 2022",
+    "event_status": "Blocked",
+    "severity": "MEDIUM",
+    "failed_login_attempts": "18",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "4.0",
+    "asset_name": "Domain-Controller",
+    "department": "IT",
+    "severity_score": "4.8",
+    "threat_match": "False",
+    "mitre_id": "T1110",
+    "technique_name": "Brute Force",
+    "tactic": "Credential Access",
+    "risk_score": "42",
+    "is_high_risk": "false",
+    "id": "EVT-1022",
+    "time": "2026-07-30T03:02:00Z",
+    "name": "Password Spray",
+    "source": "192.168.1.15",
+    "target": "10.0.0.5",
+    "status": "RESOLVED",
+    "prediction": "Normal",
+    "confidence": 58,
+    "reasons": [
+      "18 failed login attempts",
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 59,
+    "m3_priority": "Medium",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 50,
+        "weight": 0.25,
+        "points": 13
+      },
+      "mlConfidence": {
+        "value": 58,
+        "weight": 0.25,
+        "points": 15
+      },
+      "assetCriticality": {
+        "value": 85,
+        "weight": 0.2,
+        "points": 17,
+        "tier": "High",
+        "type": "Domain Controller"
+      },
+      "vulnerabilityExposure": {
+        "value": 40,
+        "weight": 0.2,
+        "points": 8,
+        "cve": "None",
+        "cvss": "4.0"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1023",
+    "timestamp": "2026-07-30T03:10:45Z",
+    "source_ip": "192.168.2.88",
+    "destination_ip": "10.0.0.12",
+    "username": "dlee",
+    "event_type": "Trojan Dropper",
+    "protocol": "TCP",
+    "source_country": "KP",
+    "destination_country": "US",
+    "device_name": "exec-laptop-03",
+    "os": "macOS Sonoma",
+    "event_status": "Quarantined",
+    "severity": "CRITICAL",
+    "failed_login_attempts": "0",
+    "malware_detected": "true",
+    "vulnerability_id": "CVE-2024-21412",
+    "cvss_score": "9.0",
+    "asset_name": "Executive-Mac-03",
+    "department": "Management",
+    "severity_score": "9.3",
+    "threat_match": "True",
+    "mitre_id": "T1204",
+    "technique_name": "User Execution",
+    "tactic": "Execution",
+    "risk_score": "90",
+    "is_high_risk": "true",
+    "id": "EVT-1023",
+    "time": "2026-07-30T03:10:45Z",
+    "name": "Trojan Dropper",
+    "source": "192.168.2.88",
+    "target": "10.0.0.12",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 90,
+    "reasons": [
+      "After-hours operational activity",
+      "Known malware signature detected",
+      "Targeting known vulnerability CVE-2024-21412"
+    ],
+    "m3_risk_score": 84,
+    "m3_priority": "Critical",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 95,
+        "weight": 0.25,
+        "points": 24
+      },
+      "mlConfidence": {
+        "value": 90,
+        "weight": 0.25,
+        "points": 23
+      },
+      "assetCriticality": {
+        "value": 65,
+        "weight": 0.2,
+        "points": 13,
+        "tier": "Medium",
+        "type": "Executive Laptop"
+      },
+      "vulnerabilityExposure": {
+        "value": 90,
+        "weight": 0.2,
+        "points": 18,
+        "cve": "CVE-2024-21412",
+        "cvss": "9.0"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1024",
+    "timestamp": "2026-07-30T03:18:22Z",
+    "source_ip": "192.168.3.50",
+    "destination_ip": "10.0.0.1",
+    "username": "cservice",
+    "event_type": "Unencrypted Traffic",
+    "protocol": "HTTP",
+    "source_country": "US",
+    "destination_country": "US",
+    "device_name": "app-node-04",
+    "os": "Ubuntu 20.04",
+    "event_status": "Logged",
+    "severity": "LOW",
+    "failed_login_attempts": "0",
+    "malware_detected": "false",
+    "vulnerability_id": "",
+    "cvss_score": "1.5",
+    "asset_name": "App-Node",
+    "department": "Operations",
+    "severity_score": "1.5",
+    "threat_match": "False",
+    "mitre_id": "T1049",
+    "technique_name": "System Network Connections Discovery",
+    "tactic": "Discovery",
+    "risk_score": "12",
+    "is_high_risk": "false",
+    "id": "EVT-1024",
+    "time": "2026-07-30T03:18:22Z",
+    "name": "Unencrypted Traffic",
+    "source": "192.168.3.50",
+    "target": "10.0.0.1",
+    "status": "RESOLVED",
+    "prediction": "Normal",
+    "confidence": 88,
+    "reasons": [
+      "After-hours operational activity"
+    ],
+    "m3_risk_score": 43,
+    "m3_priority": "Medium",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 20,
+        "weight": 0.25,
+        "points": 5
+      },
+      "mlConfidence": {
+        "value": 88,
+        "weight": 0.25,
+        "points": 22
+      },
+      "assetCriticality": {
+        "value": 30,
+        "weight": 0.2,
+        "points": 6,
+        "tier": "Low",
+        "type": "App Sandbox"
+      },
+      "vulnerabilityExposure": {
+        "value": 15,
+        "weight": 0.2,
+        "points": 3,
+        "cve": "None",
+        "cvss": "1.5"
+      },
+      "threatIntelligence": {
+        "value": 70,
+        "weight": 0.1,
+        "points": 7
+      }
+    }
+  },
+  {
+    "event_id": "EVT-1025",
+    "timestamp": "2026-07-30T03:25:00Z",
+    "source_ip": "185.220.101.7",
+    "destination_ip": "10.0.0.12",
+    "username": "root",
+    "event_type": "Rootkit Activity",
+    "protocol": "Kernel",
+    "source_country": "RU",
+    "destination_country": "US",
+    "device_name": "srv-db-01",
+    "os": "Ubuntu 22.04",
+    "event_status": "Active",
+    "severity": "CRITICAL",
+    "failed_login_attempts": "0",
+    "malware_detected": "true",
+    "vulnerability_id": "CVE-2022-0847",
+    "cvss_score": "7.8",
+    "asset_name": "Database-Server-01",
+    "department": "IT",
+    "severity_score": "9.6",
+    "threat_match": "True",
+    "mitre_id": "T1014",
+    "technique_name": "Rootkit",
+    "tactic": "Defense Evasion",
+    "risk_score": "97",
+    "is_high_risk": "true",
+    "id": "EVT-1025",
+    "time": "2026-07-30T03:25:00Z",
+    "name": "Rootkit Activity",
+    "source": "185.220.101.7",
+    "target": "10.0.0.12",
+    "status": "UNRESOLVED",
+    "prediction": "Critical",
+    "confidence": 97,
+    "reasons": [
+      "After-hours operational activity",
+      "Known malware signature detected",
+      "Targeting known vulnerability CVE-2022-0847"
+    ],
+    "m3_risk_score": 94,
+    "m3_priority": "Critical",
+    "m3_factors": {
+      "threatSeverity": {
+        "value": 95,
+        "weight": 0.25,
+        "points": 24
+      },
+      "mlConfidence": {
+        "value": 97,
+        "weight": 0.25,
+        "points": 24
+      },
+      "assetCriticality": {
+        "value": 100,
+        "weight": 0.2,
+        "points": 20,
+        "tier": "Critical",
+        "type": "Production Database"
+      },
+      "vulnerabilityExposure": {
+        "value": 78,
+        "weight": 0.2,
+        "points": 16,
+        "cve": "CVE-2022-0847",
+        "cvss": "7.8"
+      },
+      "threatIntelligence": {
+        "value": 100,
+        "weight": 0.1,
+        "points": 10
+      }
+    }
+  }
+]

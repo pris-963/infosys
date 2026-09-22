@@ -1,0 +1,1682 @@
+[
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 0,
+    "hourLabel": "00:00",
+    "date": "2026-08-31",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 1,
+    "hourLabel": "01:00",
+    "date": "2026-08-31",
+    "threatCount": 4,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 2,
+    "hourLabel": "02:00",
+    "date": "2026-08-31",
+    "threatCount": 6,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 3,
+    "hourLabel": "03:00",
+    "date": "2026-08-31",
+    "threatCount": 7,
+    "dominantType": "Ransomware / Brute Force",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 4,
+    "hourLabel": "04:00",
+    "date": "2026-08-31",
+    "threatCount": 5,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 5,
+    "hourLabel": "05:00",
+    "date": "2026-08-31",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 6,
+    "hourLabel": "06:00",
+    "date": "2026-08-31",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 7,
+    "hourLabel": "07:00",
+    "date": "2026-08-31",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 8,
+    "hourLabel": "08:00",
+    "date": "2026-08-31",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 9,
+    "hourLabel": "09:00",
+    "date": "2026-08-31",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 10,
+    "hourLabel": "10:00",
+    "date": "2026-08-31",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 11,
+    "hourLabel": "11:00",
+    "date": "2026-08-31",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 12,
+    "hourLabel": "12:00",
+    "date": "2026-08-31",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 13,
+    "hourLabel": "13:00",
+    "date": "2026-08-31",
+    "threatCount": 2,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 14,
+    "hourLabel": "14:00",
+    "date": "2026-08-31",
+    "threatCount": 3,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 15,
+    "hourLabel": "15:00",
+    "date": "2026-08-31",
+    "threatCount": 4,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 16,
+    "hourLabel": "16:00",
+    "date": "2026-08-31",
+    "threatCount": 3,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 17,
+    "hourLabel": "17:00",
+    "date": "2026-08-31",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 18,
+    "hourLabel": "18:00",
+    "date": "2026-08-31",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 19,
+    "hourLabel": "19:00",
+    "date": "2026-08-31",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 20,
+    "hourLabel": "20:00",
+    "date": "2026-08-31",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 21,
+    "hourLabel": "21:00",
+    "date": "2026-08-31",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 22,
+    "hourLabel": "22:00",
+    "date": "2026-08-31",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Monday",
+    "dayIndex": 0,
+    "hour": 23,
+    "hourLabel": "23:00",
+    "date": "2026-08-31",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 0,
+    "hourLabel": "00:00",
+    "date": "2026-09-01",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 1,
+    "hourLabel": "01:00",
+    "date": "2026-09-01",
+    "threatCount": 5,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 2,
+    "hourLabel": "02:00",
+    "date": "2026-09-01",
+    "threatCount": 5,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 3,
+    "hourLabel": "03:00",
+    "date": "2026-09-01",
+    "threatCount": 3,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 4,
+    "hourLabel": "04:00",
+    "date": "2026-09-01",
+    "threatCount": 7,
+    "dominantType": "Ransomware / Brute Force",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 5,
+    "hourLabel": "05:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 6,
+    "hourLabel": "06:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 7,
+    "hourLabel": "07:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 8,
+    "hourLabel": "08:00",
+    "date": "2026-09-01",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 9,
+    "hourLabel": "09:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 10,
+    "hourLabel": "10:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 11,
+    "hourLabel": "11:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 12,
+    "hourLabel": "12:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 13,
+    "hourLabel": "13:00",
+    "date": "2026-09-01",
+    "threatCount": 4,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 14,
+    "hourLabel": "14:00",
+    "date": "2026-09-01",
+    "threatCount": 3,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 15,
+    "hourLabel": "15:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 16,
+    "hourLabel": "16:00",
+    "date": "2026-09-01",
+    "threatCount": 3,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 17,
+    "hourLabel": "17:00",
+    "date": "2026-09-01",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 18,
+    "hourLabel": "18:00",
+    "date": "2026-09-01",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 19,
+    "hourLabel": "19:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 20,
+    "hourLabel": "20:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 21,
+    "hourLabel": "21:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 22,
+    "hourLabel": "22:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Tuesday",
+    "dayIndex": 1,
+    "hour": 23,
+    "hourLabel": "23:00",
+    "date": "2026-09-01",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 0,
+    "hourLabel": "00:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 1,
+    "hourLabel": "01:00",
+    "date": "2026-09-02",
+    "threatCount": 3,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 2,
+    "hourLabel": "02:00",
+    "date": "2026-09-02",
+    "threatCount": 6,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 3,
+    "hourLabel": "03:00",
+    "date": "2026-09-02",
+    "threatCount": 3,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 4,
+    "hourLabel": "04:00",
+    "date": "2026-09-02",
+    "threatCount": 6,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 5,
+    "hourLabel": "05:00",
+    "date": "2026-09-02",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 6,
+    "hourLabel": "06:00",
+    "date": "2026-09-02",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 7,
+    "hourLabel": "07:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 8,
+    "hourLabel": "08:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 9,
+    "hourLabel": "09:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 10,
+    "hourLabel": "10:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 11,
+    "hourLabel": "11:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 12,
+    "hourLabel": "12:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 13,
+    "hourLabel": "13:00",
+    "date": "2026-09-02",
+    "threatCount": 4,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 14,
+    "hourLabel": "14:00",
+    "date": "2026-09-02",
+    "threatCount": 4,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 15,
+    "hourLabel": "15:00",
+    "date": "2026-09-02",
+    "threatCount": 3,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 16,
+    "hourLabel": "16:00",
+    "date": "2026-09-02",
+    "threatCount": 3,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 17,
+    "hourLabel": "17:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 18,
+    "hourLabel": "18:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 19,
+    "hourLabel": "19:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 20,
+    "hourLabel": "20:00",
+    "date": "2026-09-02",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 21,
+    "hourLabel": "21:00",
+    "date": "2026-09-02",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 22,
+    "hourLabel": "22:00",
+    "date": "2026-09-02",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Wednesday",
+    "dayIndex": 2,
+    "hour": 23,
+    "hourLabel": "23:00",
+    "date": "2026-09-02",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 0,
+    "hourLabel": "00:00",
+    "date": "2026-09-03",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 1,
+    "hourLabel": "01:00",
+    "date": "2026-09-03",
+    "threatCount": 5,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 2,
+    "hourLabel": "02:00",
+    "date": "2026-09-03",
+    "threatCount": 7,
+    "dominantType": "Ransomware / Brute Force",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 3,
+    "hourLabel": "03:00",
+    "date": "2026-09-03",
+    "threatCount": 4,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 4,
+    "hourLabel": "04:00",
+    "date": "2026-09-03",
+    "threatCount": 5,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 5,
+    "hourLabel": "05:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 6,
+    "hourLabel": "06:00",
+    "date": "2026-09-03",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 7,
+    "hourLabel": "07:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 8,
+    "hourLabel": "08:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 9,
+    "hourLabel": "09:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 10,
+    "hourLabel": "10:00",
+    "date": "2026-09-03",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 11,
+    "hourLabel": "11:00",
+    "date": "2026-09-03",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 12,
+    "hourLabel": "12:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 13,
+    "hourLabel": "13:00",
+    "date": "2026-09-03",
+    "threatCount": 2,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 14,
+    "hourLabel": "14:00",
+    "date": "2026-09-03",
+    "threatCount": 4,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 15,
+    "hourLabel": "15:00",
+    "date": "2026-09-03",
+    "threatCount": 2,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 16,
+    "hourLabel": "16:00",
+    "date": "2026-09-03",
+    "threatCount": 1,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 17,
+    "hourLabel": "17:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 18,
+    "hourLabel": "18:00",
+    "date": "2026-09-03",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 19,
+    "hourLabel": "19:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 20,
+    "hourLabel": "20:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 21,
+    "hourLabel": "21:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 22,
+    "hourLabel": "22:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Thursday",
+    "dayIndex": 3,
+    "hour": 23,
+    "hourLabel": "23:00",
+    "date": "2026-09-03",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 0,
+    "hourLabel": "00:00",
+    "date": "2026-09-04",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 1,
+    "hourLabel": "01:00",
+    "date": "2026-09-04",
+    "threatCount": 7,
+    "dominantType": "Ransomware / Brute Force",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 2,
+    "hourLabel": "02:00",
+    "date": "2026-09-04",
+    "threatCount": 4,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 3,
+    "hourLabel": "03:00",
+    "date": "2026-09-04",
+    "threatCount": 6,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 4,
+    "hourLabel": "04:00",
+    "date": "2026-09-04",
+    "threatCount": 7,
+    "dominantType": "Ransomware / Brute Force",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 5,
+    "hourLabel": "05:00",
+    "date": "2026-09-04",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 6,
+    "hourLabel": "06:00",
+    "date": "2026-09-04",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 7,
+    "hourLabel": "07:00",
+    "date": "2026-09-04",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 8,
+    "hourLabel": "08:00",
+    "date": "2026-09-04",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 9,
+    "hourLabel": "09:00",
+    "date": "2026-09-04",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 10,
+    "hourLabel": "10:00",
+    "date": "2026-09-04",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 11,
+    "hourLabel": "11:00",
+    "date": "2026-09-04",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 12,
+    "hourLabel": "12:00",
+    "date": "2026-09-04",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 13,
+    "hourLabel": "13:00",
+    "date": "2026-09-04",
+    "threatCount": 4,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 14,
+    "hourLabel": "14:00",
+    "date": "2026-09-04",
+    "threatCount": 2,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 15,
+    "hourLabel": "15:00",
+    "date": "2026-09-04",
+    "threatCount": 3,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 16,
+    "hourLabel": "16:00",
+    "date": "2026-09-04",
+    "threatCount": 3,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 17,
+    "hourLabel": "17:00",
+    "date": "2026-09-04",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 18,
+    "hourLabel": "18:00",
+    "date": "2026-09-04",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 19,
+    "hourLabel": "19:00",
+    "date": "2026-09-04",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 20,
+    "hourLabel": "20:00",
+    "date": "2026-09-04",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 21,
+    "hourLabel": "21:00",
+    "date": "2026-09-04",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 22,
+    "hourLabel": "22:00",
+    "date": "2026-09-04",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Friday",
+    "dayIndex": 4,
+    "hour": 23,
+    "hourLabel": "23:00",
+    "date": "2026-09-04",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 0,
+    "hourLabel": "00:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 1,
+    "hourLabel": "01:00",
+    "date": "2026-09-05",
+    "threatCount": 5,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 2,
+    "hourLabel": "02:00",
+    "date": "2026-09-05",
+    "threatCount": 7,
+    "dominantType": "Ransomware / Brute Force",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 3,
+    "hourLabel": "03:00",
+    "date": "2026-09-05",
+    "threatCount": 3,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 4,
+    "hourLabel": "04:00",
+    "date": "2026-09-05",
+    "threatCount": 3,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 5,
+    "hourLabel": "05:00",
+    "date": "2026-09-05",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 6,
+    "hourLabel": "06:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 7,
+    "hourLabel": "07:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 8,
+    "hourLabel": "08:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 9,
+    "hourLabel": "09:00",
+    "date": "2026-09-05",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 10,
+    "hourLabel": "10:00",
+    "date": "2026-09-05",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 11,
+    "hourLabel": "11:00",
+    "date": "2026-09-05",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 12,
+    "hourLabel": "12:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 13,
+    "hourLabel": "13:00",
+    "date": "2026-09-05",
+    "threatCount": 2,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 14,
+    "hourLabel": "14:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 15,
+    "hourLabel": "15:00",
+    "date": "2026-09-05",
+    "threatCount": 2,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 16,
+    "hourLabel": "16:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 17,
+    "hourLabel": "17:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 18,
+    "hourLabel": "18:00",
+    "date": "2026-09-05",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 19,
+    "hourLabel": "19:00",
+    "date": "2026-09-05",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 20,
+    "hourLabel": "20:00",
+    "date": "2026-09-05",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 21,
+    "hourLabel": "21:00",
+    "date": "2026-09-05",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 22,
+    "hourLabel": "22:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Saturday",
+    "dayIndex": 5,
+    "hour": 23,
+    "hourLabel": "23:00",
+    "date": "2026-09-05",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 0,
+    "hourLabel": "00:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 1,
+    "hourLabel": "01:00",
+    "date": "2026-09-06",
+    "threatCount": 5,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 2,
+    "hourLabel": "02:00",
+    "date": "2026-09-06",
+    "threatCount": 6,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "CRITICAL"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 3,
+    "hourLabel": "03:00",
+    "date": "2026-09-06",
+    "threatCount": 3,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 4,
+    "hourLabel": "04:00",
+    "date": "2026-09-06",
+    "threatCount": 3,
+    "dominantType": "Port Scan / Recon",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 5,
+    "hourLabel": "05:00",
+    "date": "2026-09-06",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 6,
+    "hourLabel": "06:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 7,
+    "hourLabel": "07:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 8,
+    "hourLabel": "08:00",
+    "date": "2026-09-06",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 9,
+    "hourLabel": "09:00",
+    "date": "2026-09-06",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 10,
+    "hourLabel": "10:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 11,
+    "hourLabel": "11:00",
+    "date": "2026-09-06",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 12,
+    "hourLabel": "12:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 13,
+    "hourLabel": "13:00",
+    "date": "2026-09-06",
+    "threatCount": 1,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 14,
+    "hourLabel": "14:00",
+    "date": "2026-09-06",
+    "threatCount": 1,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 15,
+    "hourLabel": "15:00",
+    "date": "2026-09-06",
+    "threatCount": 1,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 16,
+    "hourLabel": "16:00",
+    "date": "2026-09-06",
+    "threatCount": 3,
+    "dominantType": "Phishing / Malware",
+    "severityLevel": "HIGH"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 17,
+    "hourLabel": "17:00",
+    "date": "2026-09-06",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 18,
+    "hourLabel": "18:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 19,
+    "hourLabel": "19:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 20,
+    "hourLabel": "20:00",
+    "date": "2026-09-06",
+    "threatCount": 1,
+    "dominantType": "Policy Violation",
+    "severityLevel": "MEDIUM"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 21,
+    "hourLabel": "21:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 22,
+    "hourLabel": "22:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  },
+  {
+    "day": "Sunday",
+    "dayIndex": 6,
+    "hour": 23,
+    "hourLabel": "23:00",
+    "date": "2026-09-06",
+    "threatCount": 0,
+    "dominantType": "Nominal",
+    "severityLevel": "LOW"
+  }
+]

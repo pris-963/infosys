@@ -1,0 +1,7 @@
+{
+  "name": "Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics",
+  "description": "Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics calculating metrics dynamically from final_security_dataset.csv",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
