@@ -11,82 +11,166 @@ from routes.risk_routes import risk_bp
 from routes.incident_routes import incident_bp
 from db import get_connection_info
 
-# Path to the frontend's dist folder (Naveen's integration)
+
+# --------------------------------------------------
+# Frontend dist path
+# --------------------------------------------------
+
 frontend_dist_dir = os.path.abspath(
-    os.path.join(os.path.dirname(__file__), "..", "..", "Data_Visulization_Frontend_Team-a", "dist")
+    os.path.join(
+        os.path.dirname(__file__),
+        "..",
+        "..",
+        "Data_Visulization_Frontend_Team-a",
+        "dist",
+    )
 )
 
-app = Flask(__name__, static_folder=frontend_dist_dir, static_url_path="")
-app.secret_key = "security_project_secret_session_key"
+
+# --------------------------------------------------
+# Flask Application
+# --------------------------------------------------
+
+app = Flask(
+    __name__,
+    static_folder=frontend_dist_dir,
+    static_url_path=""
+)
+
+app.secret_key = os.getenv(
+    "SECRET_KEY",
+    "security_project_secret_session_key"
+)
 
 
 # --------------------------------------------------
 # CORS Configuration
 # --------------------------------------------------
 
+# Local development origins
+allowed_origins = [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:3001",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:5174",
+]
+
+# Production frontend URL
+frontend_url = os.getenv(
+    "FRONTEND_URL",
+    "https://infosysproject-mf6p.onrender.com"
+).rstrip("/")
+
+if frontend_url and frontend_url not in allowed_origins:
+    allowed_origins.append(frontend_url)
+
+
 CORS(
     app,
+    origins=allowed_origins,
     supports_credentials=True,
-    origins=[
-        "http://localhost:3000",
-        "http://localhost:3001",
-        "http://localhost:5173",
-        "http://localhost:5174",
-        "http://127.0.0.1:3000",
-        "http://127.0.0.1:3001",
-        "http://127.0.0.1:5173",
-        "http://127.0.0.1:5174"
-         "https://infosysproject-mf6p.onrender.com"
-    ]
+    methods=[
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE",
+        "OPTIONS",
+    ],
+    allow_headers=[
+        "Content-Type",
+        "Authorization",
+    ],
 )
 
 
-
 # --------------------------------------------------
-# Milestone 1 APIs  (Security_db.processed_events)
-# --------------------------------------------------
-
-app.register_blueprint(events_bp,    url_prefix="/api")  # GET /api/events
-app.register_blueprint(stats_bp,     url_prefix="/api")  # GET /api/stats, /api/heatmap, /api/audit
-app.register_blueprint(threats_bp,   url_prefix="/api")  # GET /api/threats
-app.register_blueprint(auth_bp)                          # POST /api/login  POST /api/signup  GET /api/me
-
-# Direct alias for non-prefixed routes during dev
-app.register_blueprint(events_bp,    url_prefix="", name="events_root")
-app.register_blueprint(stats_bp,     url_prefix="", name="stats_root")
-app.register_blueprint(threats_bp,   url_prefix="", name="threats_root")
-
-
-# --------------------------------------------------
-# Milestone 2 Prediction APIs  (Security_db.prediction_results)
+# Milestone 1 APIs
 # --------------------------------------------------
 
-app.register_blueprint(prediction_bp, url_prefix="/api")
-# GET  /api/predictions
-# GET  /api/predictions/<event_id>
-# GET  /api/anomalies
-# GET  /api/model-performance
-# GET  /api/threat-summary
-# POST /api/predict
+app.register_blueprint(
+    events_bp,
+    url_prefix="/api"
+)
+
+app.register_blueprint(
+    stats_bp,
+    url_prefix="/api"
+)
+
+app.register_blueprint(
+    threats_bp,
+    url_prefix="/api"
+)
+
+app.register_blueprint(
+    auth_bp
+)
+
+# Direct aliases for development
+app.register_blueprint(
+    events_bp,
+    url_prefix="",
+    name="events_root"
+)
+
+app.register_blueprint(
+    stats_bp,
+    url_prefix="",
+    name="stats_root"
+)
+
+app.register_blueprint(
+    threats_bp,
+    url_prefix="",
+    name="threats_root"
+)
 
 
 # --------------------------------------------------
-# Milestone 3 APIs  (Risk, Incidents, Attack Chains)
+# Milestone 2 Prediction APIs
 # --------------------------------------------------
 
-app.register_blueprint(risk_bp,      url_prefix="/api/v1")
-app.register_blueprint(risk_bp,      url_prefix="/api", name="risk_api")
-# GET  /api/v1/risk/summary  &  /api/risk/summary
-# GET  /api/v1/risk/high     &  /api/risk/high
-# POST /api/v1/risk/calculate & /api/risk/calculate
+app.register_blueprint(
+    prediction_bp,
+    url_prefix="/api"
+)
 
-app.register_blueprint(incident_bp,  url_prefix="/api/v1")
-app.register_blueprint(incident_bp,  url_prefix="/api", name="incident_api")
-# GET  /api/v1/incidents     &  /api/incidents
-# GET  /api/v1/incidents/<id>&  /api/incidents/<id>
-# POST /api/v1/incidents/<id>/status & /api/incidents/<id>/status
-# GET  /api/v1/attack-chains &  /api/attack-chains
-# GET  /api/v1/recommendations/<id>
+
+# --------------------------------------------------
+# Milestone 3 Risk APIs
+# --------------------------------------------------
+
+app.register_blueprint(
+    risk_bp,
+    url_prefix="/api/v1"
+)
+
+app.register_blueprint(
+    risk_bp,
+    url_prefix="/api",
+    name="risk_api"
+)
+
+
+# --------------------------------------------------
+# Milestone 3 Incident APIs
+# --------------------------------------------------
+
+app.register_blueprint(
+    incident_bp,
+    url_prefix="/api/v1"
+)
+
+app.register_blueprint(
+    incident_bp,
+    url_prefix="/api",
+    name="incident_api"
+)
 
 
 # --------------------------------------------------
@@ -96,76 +180,118 @@ app.register_blueprint(incident_bp,  url_prefix="/api", name="incident_api")
 @app.route("/api")
 def api_health():
     conn = get_connection_info()
+
     return {
-        "Project":    "Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics",
-        "Backend":    "Running",
-        "Version":    "3.0",
-        "Database":   conn["database"],
+        "Project": (
+            "Security Operations Dashboard for Threat Detection "
+            "with Risk Mitigation Analytics"
+        ),
+        "Backend": "Running",
+        "Version": "3.0",
+        "Database": conn["database"],
         "Connection": conn["source"],
-        "Connected":  conn["connected"],
+        "Connected": conn["connected"],
+
         "Milestone_1_2_Endpoints": [
-            "GET  /api/events",
-            "GET  /api/events?severity=Critical",
-            "GET  /api/events?event_type=Brute Force",
-            "GET  /api/stats",
-            "GET  /api/threats",
-            "GET  /api/threats?severity=Critical",
-            "GET  /api/predictions",
-            "GET  /api/predictions/<event_id>",
-            "GET  /api/anomalies",
-            "GET  /api/model-performance",
-            "GET  /api/threat-summary",
+            "GET /api/events",
+            "GET /api/events?severity=Critical",
+            "GET /api/events?event_type=Brute Force",
+            "GET /api/stats",
+            "GET /api/threats",
+            "GET /api/threats?severity=Critical",
+            "GET /api/predictions",
+            "GET /api/predictions/<event_id>",
+            "GET /api/anomalies",
+            "GET /api/model-performance",
+            "GET /api/threat-summary",
             "POST /api/predict",
             "POST /api/login",
-            "POST /api/signup"
+            "POST /api/signup",
         ],
+
         "Milestone_3_Endpoints": [
-            "GET  /api/v1/risk/summary",
-            "GET  /api/v1/risk/high",
-            "GET  /api/v1/risk/high?risk_class=Critical",
-            "GET  /api/v1/risk/high?limit=50&offset=0",
+            "GET /api/v1/risk/summary",
+            "GET /api/v1/risk/high",
+            "GET /api/v1/risk/high?risk_class=Critical",
+            "GET /api/v1/risk/high?limit=50&offset=0",
             "POST /api/v1/risk/calculate",
-            "GET  /api/v1/incidents",
-            "GET  /api/v1/incidents?priority=Critical",
-            "GET  /api/v1/incidents?status=Open&limit=50&offset=0",
-            "GET  /api/v1/incidents/<incident_id>",
-            "GET  /api/v1/attack-chains",
-            "GET  /api/v1/attack-chains?min_events=2&limit=50",
-            "GET  /api/v1/recommendations/<incident_id>"
+            "GET /api/v1/incidents",
+            "GET /api/v1/incidents?priority=Critical",
+            "GET /api/v1/incidents?status=Open&limit=50&offset=0",
+            "GET /api/v1/incidents/<incident_id>",
+            "GET /api/v1/attack-chains",
+            "GET /api/v1/attack-chains?min_events=2&limit=50",
+            "GET /api/v1/recommendations/<incident_id>",
         ],
-        "Docs": "See backend/README.md for full request/response details"
+
+        "Docs": "See backend/README.md for full request/response details",
     }
 
 
 # --------------------------------------------------
-# Catch-all route — serve Vite built frontend files
-# (Naveen's frontend integration)
+# Frontend Catch-All
 # --------------------------------------------------
 
 @app.route("/", defaults={"path": ""})
 @app.route("/<path:path>")
 def serve(path):
-    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
-        return send_from_directory(app.static_folder, path)
-    else:
-        if os.path.exists(os.path.join(app.static_folder, "index.html")):
-            return send_from_directory(app.static_folder, "index.html")
-        # Fallback when frontend dist not built yet
-        conn = get_connection_info()
-        return {
-            "Project":    "Security Operations Dashboard for Threat Detection with Risk Mitigation Analytics",
-            "Backend":    "Running",
-            "Version":    "1.0",
-            "Database":   conn["database"],
-            "Connection": conn["source"],
-            "Connected":  conn["connected"],
-            "Note": "Frontend not built yet. Run 'npm run build' in the frontend repo."
-        }
+
+    # Serve requested static frontend file
+    if (
+        path
+        and app.static_folder
+        and os.path.exists(
+            os.path.join(app.static_folder, path)
+        )
+    ):
+        return send_from_directory(
+            app.static_folder,
+            path
+        )
+
+    # Serve Vite index.html if available
+    if (
+        app.static_folder
+        and os.path.exists(
+            os.path.join(
+                app.static_folder,
+                "index.html"
+            )
+        )
+    ):
+        return send_from_directory(
+            app.static_folder,
+            "index.html"
+        )
+
+    # Backend-only fallback
+    conn = get_connection_info()
+
+    return {
+        "Project": (
+            "Security Operations Dashboard for Threat Detection "
+            "with Risk Mitigation Analytics"
+        ),
+        "Backend": "Running",
+        "Version": "3.0",
+        "Database": conn["database"],
+        "Connection": conn["source"],
+        "Connected": conn["connected"],
+        "Note": (
+            "Frontend not built in this backend deployment. "
+            "Use the separate Render frontend service."
+        ),
+    }
 
 
 # --------------------------------------------------
-# Start Flask Server
+# Local Development
 # --------------------------------------------------
 
 if __name__ == "__main__":
-    app.run(debug=True, use_reloader=False, host="0.0.0.0", port=5000)
+    app.run(
+        debug=True,
+        use_reloader=False,
+        host="0.0.0.0",
+        port=5000
+    )
